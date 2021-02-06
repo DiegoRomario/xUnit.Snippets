@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+   <CodeSnippet Format="1.0.0">
+      <Header>
+         <SnippetTypes>
+            <SnippetType>Expansion</SnippetType>
+         </SnippetTypes>
+         <Title>Theory Method</Title>
+         <Shortcut>taaa</Shortcut>
+         <Description>Create an AAA xUNIT Theory With Inline Data</Description>
+         <Author>Diego Romário</Author>
+      </Header>
+      <Snippet>
+         <Imports>
+            <Import>
+               <Namespace>Xunit</Namespace>
+            </Import>
+         </Imports>
+         <Code Language="csharp"><![CDATA[[Theory(DisplayName = "$DisplayName$")]
+      [InlineData($Params1$)]
+      [InlineData($Params2$)]  
+      [InlineData($Params3$)]    
+      [Trait("$Name$","$Value$")]
+      public void $MethodName$()
+      {
+          // Arrange
+
+          // Act
+
+          // Assert
+
+          $end$
+      }]]></Code>
+         <Declarations>
+            <Literal>
+               <ID>DisplayName</ID>
+               <ToolTip>Choose a display name for this test method</ToolTip>
+               <Default>DisplayName</Default>
+            </Literal>
+            <Literal>
+               <ID>Params1</ID>
+               <ToolTip>Set InlineData Params1</ToolTip>
+               <Default>Params1</Default>
+            </Literal>
+            <Literal>
+               <ID>Params2</ID>
+               <ToolTip>Set InlineData Params2</ToolTip>
+               <Default>Params3</Default>
+            </Literal>
+            <Literal>
+               <ID>Params3</ID>
+               <ToolTip>Set InlineData Params3</ToolTip>
+               <Default>Params3</Default>
+            </Literal>
+            <Literal>
+               <ID>Name</ID>
+               <ToolTip>Choose a name to categorize the test method</ToolTip>
+               <Default>Category</Default>
+            </Literal>
+            <Literal>
+               <ID>Value</ID>
+               <ToolTip>Choose a value to categorize the test method</ToolTip>
+               <Default>MyCategory</Default>
+            </Literal>
+            <Literal>
+               <ID>MethodName</ID>
+               <ToolTip>Choose a method name for this test method</ToolTip>
+               <Default>MethodName</Default>
+            </Literal>
+         </Declarations>
+      </Snippet>
+   </CodeSnippet>
+</CodeSnippets>
