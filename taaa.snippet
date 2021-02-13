@@ -21,7 +21,7 @@
       [InlineData($Params2$)]  
       [InlineData($Params3$)]    
       [Trait("$Name$","$Value$")]
-      public void $MethodName$()
+      public void $MethodName$($Params$)
       {
           // Arrange
 
@@ -51,6 +51,11 @@
                <ID>Params3</ID>
                <ToolTip>Set InlineData Params3</ToolTip>
                <Default>Params3</Default>
+            </Literal>
+			<Literal>
+               <ID>Params</ID>
+               <ToolTip>Set Method Params</ToolTip>
+               <Default>Params</Default>
             </Literal>
             <Literal>
                <ID>Name</ID>
