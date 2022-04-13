@@ -1,5 +1,5 @@
 # xUnit.Snippets
-Nice snippets to help us test using the xUnit framework
+Nice snippets to help us develop tests using the xUnit framework
 
 
 
